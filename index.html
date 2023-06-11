@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <title>Modern Rent</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h4><i class="bi bi-house-door-fill"></i> Modern Rent</h4>
+            <div class="right_bx">
+                <ul>
+                    <li><a href="#">Поддержка</a></li>
+                    <li><a href="#"><i class="bi bi-globe"></i> Русский</a></li>
+                    <li><a href="#">Разместить объявление</a></li>
+                </ul>
+                <div class="account_bx">
+                    <i class="bi bi-app-indicator"></i>
+                    <i class="bi bi-person"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="cont_bx">
+                <h1>Modern <br> rent</h1>
+                <p>2 спальни, 1 кухня, 2 ванной комнаты</p>
+                <div class="weather">
+                    <h6><span></span></h6>
+                </div>
+                <div class="btns_cont">
+                    <i class="bi bi-arrow-left" id="btn_left"></i>
+                    <i class="bi bi-arrow-right" id="btn_right"></i>
+                </div>
+                <div class="images_bx">
+                    <div class="card">
+                        <img src="img/bg1.jpg" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="img/bg2.jpg" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="img/bg3.jpg" alt="">
+                        <h6 id="h6">+6</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="choose_bx">
+                <div class="stay_bx">
+                    <button><i class="bi bi-house-door-fill"></i></button>
+                    <button><i class="bi bi-star-fill"></i></button>
+                    <button><i class="bi bi-tv-fill"></i></button>
+                </div>
+                <div class="select">
+                    <div class="card">
+                        <h5>Город</h5>
+                        <input type="text" value="Санкт-Петербург">
+                        <input type="text" value="Московский проспект">
+                    </div>
+                    <div class="card">
+                        <h5>Кол-во человек</h5>
+                        <input type="text" value="4 Человека" id="people">
+                        <button id="people_less">Убавить</button>
+                        <button id="people_more">Прибавить</button>
+                    </div>
+                    <div class="card">
+                        <div class="left_box">
+                            <h5>Заезд</h5>
+                            <div class="date">
+                                <h3 id="checkin_data">Вс, 11 Июня</h3>
+                                <input type="date" id="checkin" value="2023-06-11">
+                                <i class="bi bi-calendar2-week-fill"></i>
+                            </div>
+                            <button id="checkin_less">Назад</button>
+                            <button id="checkin_more">Дальше</button>
+                        </div>
+                        <div class="right_box">
+                            <h5>Выезд</h5>
+                            <div class="date">
+                                <h3 id="checkout_data">Вт, 13 Июня</h3>
+                                <input type="date" id="checkout" value="2023-06-13">
+                                <i class="bi bi-calendar2-week-fill"></i>
+                            </div>
+                            <button id="checkout_less">Назад</button>
+                            <button id="checkout_more">Дальше</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="map">
+        <div class="address_bx">
+            <div class="location_bx">
+                <h6>Локация</h6>
+                <h4>Санкт-Петербург</h4>
+            </div>
+            <i class="bi bi-fullscreen-exit"></i>
+        </div>
+        <iframe src="https://my.atlist.com/map/33baed01-80c4-4da1-ba3e-6f2ccf365913?share=true" allow="geolocation 'self'
+        https://my.atlist.com" width="100%" height="400px" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    </div>
+
+    <div class="home">
+        <div class="title_button">
+            <h2>Другие варианты</h2>
+            <button>Смотреть все <i class="bi bi-arrow-right"></i></button>
+        </div>
+
+        <div class="home_bx">
+            <div class="card">
+                <img src="img/1.jpg" alt="">
+                <div class="content">
+                    <i class="bi bi-balloon-heart"></i>
+                    <div class="cont">
+                        <h4>Аппартаменты</h4>
+                        <p>Премиум</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/2.jpg" alt="">
+                <div class="content">
+                    <i class="bi bi-balloon-heart"></i>
+                    <div class="cont">
+                        <h4>Аппартаменты</h4>
+                        <p>Премиум</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/3.jpg" alt="">
+                <div class="content">
+                    <i class="bi bi-balloon-heart"></i>
+                    <div class="cont">
+                        <h4>Аппартаменты</h4>
+                        <p>Премиум</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/4.jpg" alt="">
+                <div class="content">
+                    <i class="bi bi-balloon-heart"></i>
+                    <div class="cont">
+                        <h4>Аппартаменты</h4>
+                        <p>Премиум</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/5.jpg" alt="">
+                <div class="content">
+                    <i class="bi bi-balloon-heart"></i>
+                    <div class="cont">
+                        <h4>Аппартаменты</h4>
+                        <p>Премиум</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <h2>Наши услуги</h2>
+        <div class="box">
+            <div class="img_bx">
+                <img src="img/serv.jpg" alt="">
+            </div>
+            <div class="cont_box">
+                <h6><span>НАШИ УСЛУГИ</span></h6>
+                <h1>Комфорт - это наш <br> Главный приоритет для вас </h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo minus ab porro id expedita facilis repudiandae dolorum maxime reprehenderit sit?</p>
+                <ul>
+                    <li>Премиальный национальный маркетинг</li>
+                    <li>Управляемый просмотр</li>
+                    <li>Без обязательств</li>
+                    <li>Знание местности</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h4>&#169; Artsid</h4>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
