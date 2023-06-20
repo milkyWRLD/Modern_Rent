@@ -9,9 +9,9 @@ people_less.addEventListener('click', ()=> {
 
     if (people_index <= 0) {
         people_index = 1;
-        people.value = people_index + ' People';
+        people.value = people_index + ' Человек';
     } else {
-        people.value = people_index + ' People';
+        people.value = people_index + ' Человек';
     }
 })
 
@@ -20,9 +20,9 @@ people_more.addEventListener('click', ()=> {
 
     if (people_index >= 4) {
         people_index = 4;
-        people.value = people_index + ' People';
+        people.value = people_index + ' Человек';
     } else {
-        people.value = people_index + ' People';
+        people.value = people_index + ' Человек';
     }
 })
 
